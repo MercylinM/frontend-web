@@ -48,18 +48,24 @@ nav a{
 
 .icon-container {
     position: relative;
-    width: 50px;
-    height: 50px;
+    display: inline-block;
+    /* Or any other appropriate display */
 }
 
 .yellow-dot {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: -8px;
     width: 20px;
     height: 20px;
     background-color: yellow;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: black;
+    /* border: 1px solid white; */
 }
 
 /* inverted shape */
@@ -260,13 +266,12 @@ h2{
 }
 
 .name {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 10px;
-    font-weight: bold;
 }
 
 .price {
-    font-size: 16px;
+    font-size: 18px;
     color: #555;
 }
 
@@ -296,6 +301,10 @@ h2{
     border-radius: 15px;
 }
 
+.shop-description{
+    font-size: 30px;
+}
+
 .desc-btn {
     background-color: #f7f5f2;
     border: solid #474747;
@@ -312,6 +321,7 @@ h2{
 .services{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .services img{
@@ -339,13 +349,22 @@ h2{
 .aside{
     width: 600px;
     height: 500px;
+  
 }
+
+
+.service-p{
+    font-size: 30px;
+    
+}
+
 .testimonials .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
 }
+
 
 /* footer */
 
@@ -382,6 +401,8 @@ li{
 .end{
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
+
 }
 
 .avartar{
@@ -389,10 +410,6 @@ li{
     gap: 50px;
 }
 
-
-/* p {
-    font-size: clamp(1rem, 2vw, 1.2rem);
-} */
 
 /* Mobile menu */
 .hamburger {
@@ -418,17 +435,36 @@ li{
         display: flex;
     }
 
-    .hamburger {
+    .hamburger, .right-side,
+    .top,
+    .bottom,
+    .aside {
         display: block;
+    }
+
+    .inverted{
+        display: none;
+    }
+
+    .icons{
+        color: #474747;
+    }
+    
+
+    .companies{
+        justify-content: center;
+        align-items: center;
     }
 
     /* Section adjustments */
     .home,
     .shop,
     .about,
+    .categories,
     .testimonial {
         flex-direction: column;
         text-align: center;
+        height: auto;
     }
 
     .home .right-side,
@@ -444,7 +480,7 @@ li{
     }
 
     /* Grid adjustments */
-    .items {
+    .items,.companies {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 15px;
