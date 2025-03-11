@@ -104,6 +104,10 @@ h2{
     justify-content: space-between;
 }
 
+.next i{
+    font-size: 20px;
+}
+
 /* home section */
 .home img{
     width: 100%;
@@ -408,6 +412,10 @@ li{
 .avartar{
     display: flex;
     gap: 50px;
+}
+
+.avartar img{
+    border-radius: 5px;
 }
 
 
