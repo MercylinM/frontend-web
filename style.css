@@ -15,6 +15,13 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.roboto-slab-font {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .container {
     width: 78%;
     margin: 80px auto;
@@ -104,8 +111,13 @@ h2{
     justify-content: space-between;
 }
 
-.next i{
+.next{
+
     font-size: 20px;
+}
+
+.next i{
+    padding-top: 20px;
 }
 
 /* home section */
@@ -131,6 +143,7 @@ h2{
     gap: 30px;
     width: 100%;
     font-weight: bold;
+    margin-top: 10%;
 }
 
 .counters p{
@@ -352,7 +365,7 @@ h2{
 .aside{
     width: 600px;
     height: 500px;
-  
+    padding: 10% 0;
 }
 
 
@@ -370,9 +383,8 @@ h2{
 
 
 /* footer */
-
-li{
-    list-style-type: none
+footer{
+    margin-top: 20%;
 }
 
 .footer-links{
@@ -389,7 +401,8 @@ li{
 .link p{
     text-transform: uppercase;
     font-size: clamp(1rem, 2vw, 1.2rem);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    font-weight: 300;
     
 }
 
@@ -412,7 +425,8 @@ li{
 }
 
 .avartar img{
-    border-radius: 5px;
+    border-radius: 15px;
+    width: 100px;
 }
 
 
