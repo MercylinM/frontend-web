@@ -229,7 +229,7 @@ h2{
     display: flex;
     gap: 20px;
     width: 100%;
-    height: 300px;  
+    /* height: 300px;   */
     margin-bottom: 20%;
 }
 
@@ -457,9 +457,11 @@ footer{
     .hamburger, .right-side,
     .top,
     .bottom,
-    .aside {
+    .testimonials {
         display: block;
     }
+
+    
 
     .inverted{
         display: none;
@@ -475,6 +477,7 @@ footer{
         align-items: center;
     }
 
+
     /* Section adjustments */
     .home,
     .shop,
@@ -488,7 +491,7 @@ footer{
 
     .home .right-side,
     .shop .shop-description,
-    .about .description {
+    .about .description, .aside {
         width: 100%;
     }
 
@@ -498,11 +501,24 @@ footer{
         margin-top: 20px;
     }
 
+    .label { 
+        left: 1px; 
+        padding: 5px 0px;   
+    }
+
+    .discount {
+        
+        margin-left: 100px;
+        
+
+    }
+
     /* Grid adjustments */
-    .items,.companies {
+    .items, .companies, .footer-links {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 15px;
+        margin-bottom: 200px;
     }
 
     .services {
