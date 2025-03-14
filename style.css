@@ -151,6 +151,7 @@ nav{
             box-shadow: 6px 6px 5px #80807f;
             align-items: center;
             gap: 10px;
+            cursor: pointer;
 
             img{
                 width: 40px;
