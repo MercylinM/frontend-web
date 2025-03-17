@@ -226,3 +226,56 @@ nav{
     }
 }
 
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5%;
+    padding: 50px 0;
+    gap: 5%;
+
+    .image-container{
+        width: 50%;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        img[alt="salad"]{
+            top: -10%;
+            right: 0;
+            width: 200px;
+            height: 250px;
+            object-fit: contain;
+            position: absolute;
+        }
+
+        img[alt="cheese"]{
+            bottom: -20%;
+            width: 200px;
+            height: 250px;
+            object-fit: contain;
+            left: -10%;
+            position: absolute;
+        }
+
+        img[alt="chef"]{
+            /* margin-left: 35%; */
+            width: 100%;
+            height: 80vh;
+            object-fit: contain;
+            /* position: absolute; */
+            right: 0;
+        }
+    }
+
+    .aside{
+        width: 50%;
+
+        .services{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        }
+    }
+
+}
