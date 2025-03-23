@@ -24,6 +24,10 @@ h2{
     font-size: clamp(3.0rem, 8vw, 4rem);
 }
 
+h3{
+    font-size: clamp(2.0rem, 5vw, 2rem);
+}
+
 p {
     color: #80807f;
     font-size: clamp(1rem, 2vw, 1.2rem);
@@ -60,7 +64,6 @@ nav{
     .links{
         display: flex;
         justify-content: space-between;
-        /* gap: 15%; */
         padding: 20px 0;
         width: 50%;
 
@@ -88,6 +91,7 @@ nav{
   
 }
 
+/* homepae */
 .home{
     display: flex;
     width: 100%;
@@ -105,7 +109,7 @@ nav{
 
             
 
-            button[type="button"]{
+            button:nth-child(2){
                 background-color: unset;
                 border: solid #e7a118;
 
@@ -164,6 +168,7 @@ nav{
     }
 }
 
+/* popular dishes section */
 .popular{
 
     .top{
@@ -171,24 +176,28 @@ nav{
         align-items: center;
         justify-content: space-between;
 
-        .scroll{
-            display: flex;
-            gap: 10%;
-            width: 20%;
-            justify-content: flex-end;
-
-            i{
-                font-size: 25px;
-                padding: 10px;
-                border: solid #e7a118;
-                border-radius: 50%;
-                color: #433006;
-
-                #right{
+        .scroll {
+                display: flex;
+                gap: 10%;
+                width: 20%;
+                justify-content: flex-end;
+        
+                i {
+                    font-size: 25px;
+                    padding: 10px;
+                    border: solid #e7a118;
+                    border-radius: 50%;
+                    color: #433006;
+        
+                    #right {
+                        background-color: #e7a118;
+                    }
+                }
+        
+                i:nth-child(2) {
                     background-color: #e7a118;
                 }
             }
-        }
     }
 
     .plates{
@@ -226,6 +235,7 @@ nav{
     }
 }
 
+/* services section */
 .services{
     display: flex;
     align-items: center;
@@ -300,6 +310,7 @@ nav{
 
 }
 
+/* menu section */
 .menu-section{
     width: 100%;
     margin: 5% auto;
@@ -355,4 +366,272 @@ nav{
                 }
             }
         }
+}
+
+/* reservation section */
+.reservation{
+    display: flex;
+    gap: 10%;
+    width: 100%;
+    margin: 5% auto;
+
+    .reserve{
+        width: 50%;
+
+        p{
+            margin: 5% 0;
+        }
+
+        button{
+            width: auto;
+        }
+    }
+
+    .reserve-image{
+        width: 50%;
+
+    }
+
+}
+
+/* testimonials */
+.testimonials{
+    width: 100%;
+    margin: 5% auto;
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .scroll {
+            display: flex;
+            gap: 10%;
+            width: 20%;
+            justify-content: flex-end;
+    
+            i {
+                font-size: 25px;
+                padding: 10px;
+                border: solid #e7a118;
+                border-radius: 50%;
+                color: #433006;
+    
+                #right {
+                    background-color: #e7a118;
+                }
+            }
+    
+            i:nth-child(2) {
+                background-color: #e7a118;
+            }
+        }
+    }
+
+    .testimonies{
+        display: flex;
+        justify-content: space-between;
+        gap: 10%;
+
+        .testimony{
+            img {
+                width: 80px;
+                height: 80px;
+                object-fit: cover;
+                /* border: #433006 solid; */
+                border-radius: 50%;
+                margin-top: 3%;
+            }
+
+            .name{
+                font-size: 24px;
+                color: #433006;
+                font-weight: 700;
+            }
+        }
+        
+    }
+}
+
+/* chefs */
+.chefs{
+    width: 100%;
+    margin: 5% auto;
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .scroll {
+            display: flex;
+            gap: 10%;
+            width: 20%;
+            justify-content: flex-end;
+    
+            i {
+                font-size: 25px;
+                padding: 10px;
+                border: solid #e7a118;
+                border-radius: 50%;
+                color: #433006;
+    
+                #right {
+                    background-color: #e7a118;
+                }
+            }
+    
+            i:nth-child(2) {
+                background-color: #e7a118;
+            }
+        }
+    }
+
+    .chefs-image{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .chef{
+            align-items: center;
+            text-align: center;
+            img{
+                width: 300px;
+                height: 500px;
+                object-fit: contain;
+            }
+
+            .name {
+                font-size: 24px;
+                color: #433006;
+                font-weight: 700;
+            }
+        }
+    }
+
+}
+
+/* get-app */
+.get-app{
+    display: flex;
+    gap: 10%;
+    margin: 5% auto;
+
+    .right{
+        width: 60%;
+
+        .apps{
+            display: flex;
+            gap: 5%;
+
+            button{
+                width: auto;
+                align-items: center;
+                display: flex;
+                gap: 20px;
+
+                .small{
+                    font-size: 10px;
+                }
+            }
+
+            button:nth-child(2){
+                background: none;
+                border: #e7a118 solid;
+            }
+        }
+    }
+
+    .left{
+        width: 40%;
+        display: flex;
+        position: relative;
+
+        .side-images{
+            align-items: center;
+            img:nth-child(1){
+                position: absolute;
+                width: 80px;
+                height: 100px;
+                object-fit: contain;
+                top: 40%;
+            }
+
+            img:nth-child(2){
+                position: absolute;
+                bottom: 20%;
+                width: 150px;
+                height: 150px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+/* footer */
+footer{
+    margin: 5% auto;
+    img{
+        width: 200px;
+        height: 100px;
+    }
+    hr{
+        margin-bottom: 5%;
+    }
+
+    .links{
+        display: flex;
+        justify-content: space-between;
+
+        .contact{
+            width: 25%;
+            margin: 3% 0; 
+                
+            form{
+                margin: 3% 0;
+                gap: 5%;
+                display: flex;
+                input{
+                    height: 30px;
+                    width: 200px;
+                    border: none;
+                    border-bottom: solid 1px;
+                    margin-bottom: 3%;
+                }
+
+                i {
+                    padding: 10px;
+                    background-color: #e7a118;
+                    color: #433006;
+                    border-radius: 50%;
+                }
+            }
+
+            .social{
+                display: flex;
+                gap: 10px;
+
+                i {
+                    padding: 10px;
+                    border: #433006 1px solid;
+                    color: #433006;
+                    border-radius: 50%;
+                }
+
+                i:nth-child(3){
+                    background-color: #e7a118;
+                    border-color: #e7a118;
+                }
+            }
+        }
+
+        .link{
+            /* text-align: center; */
+            justify-content: center;
+            li{
+                list-style-type: none;
+                padding-left: 0;
+            }
+        }
+    }   
 }
